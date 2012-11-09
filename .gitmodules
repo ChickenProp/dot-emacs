@@ -1,3 +1,9 @@
 [submodule "includes/auto-complete"]
 	path = includes/auto-complete
 	url = git@github.com:auto-complete/auto-complete.git
+[submodule "includes/evil"]
+	path = includes/evil
+	url = git@github.com:emacsmirror/evil.git
+[submodule "includes/ace-jump-mode"]
+	path = includes/ace-jump-mode
+	url = git@github.com:winterTTr/ace-jump-mode.git
