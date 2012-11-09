@@ -1,1 +1,7 @@
 My emacs configuration. I want to migrate it to my work laptop.
+
+Other things I need to get for it:
+ace-jump-mode
+auto-complete
+evil
+org-mode
