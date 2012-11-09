@@ -1,4 +1,4 @@
-(add-to-list 'load-path "/home/phil/.elisp/evil")
+(add-to-list 'load-path "~/.elisp/includes/evil")
 (require 'evil)
 
 (setq evil-want-fine-undo t)

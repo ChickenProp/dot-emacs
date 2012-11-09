@@ -4,9 +4,11 @@
 ;(require 'auto-complete-latex)
 ;(setq ac-l-dict-directory "/home/phil/.elisp/auto-complete-latex/ac-l-dict/")
 
-(require 'auto-complete)
-(add-to-list 'ac-modes 'tex-mode)
-(add-to-list 'ac-modes 'latex-mode) ; Without latex as well, it doesn't start.
+(when *on-gentoo*
+  (require 'auto-complete)
+  (add-to-list 'ac-modes 'tex-mode)
+  (add-to-list 'ac-modes 'latex-mode) ; Without latex as well, it doesn't start.
+)
 
 ;; This is in fact provided by latex-insert-block, bound to C-c C-o.
 (defun tex-wrap-environ (name point mark)

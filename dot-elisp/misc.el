@@ -22,7 +22,7 @@
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 
-(add-to-list 'load-path "/home/phil/.elisp/ace-jump-mode")
+(add-to-list 'load-path "~/.elisp/includes/ace-jump-mode")
 (require 'ace-jump-mode)
 (define-key evil-motion-state-map (kbd "g c") 'ace-jump-word-mode)
 (define-key evil-motion-state-map (kbd "g r") 'ace-jump-char-mode)

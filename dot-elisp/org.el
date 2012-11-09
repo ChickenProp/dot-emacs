@@ -17,5 +17,7 @@
      (add-to-list 'org-file-apps '("pdf" . "epdfview %s"))
      (setq org-latex-to-pdf-process '("texi2dvi -b --dvipdf %f"))))
 
-(require 'auto-complete)
-(add-to-list 'ac-modes 'org-mode)
+(when *on-gentoo*
+  (require 'auto-complete)
+  (add-to-list 'ac-modes 'org-mode)
+)
