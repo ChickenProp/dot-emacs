@@ -1,0 +1,3 @@
+[submodule "includes/auto-complete"]
+	path = includes/auto-complete
+	url = git@github.com:auto-complete/auto-complete.git

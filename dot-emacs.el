@@ -1,4 +1,13 @@
-(load-library "site-start")
+(defvar *on-osx* nil)
+(defvar *on-gentoo* nil)
+
+(if (eq system-type 'darwin)
+    (setq *on-osx* t)
+  (setq *on-gentoo* t))
+
+(when *on-gentoo*
+  (load-library "site-start"))
+
 (require 'cl)
 
 (defun elisp-files-in-dir (dir)
